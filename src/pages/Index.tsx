@@ -185,7 +185,6 @@ const Index = () => {
         <section className="animate-fade-in">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-navy mb-4">Что входит в Подписку</h2>
-            <BookShelf books={professionalBooks} />
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((feature, index) => (
@@ -213,9 +212,7 @@ const Index = () => {
               <CardTitle className="text-3xl font-bold text-navy mb-4">
                 Ваш прогресс вместе с Литрес
               </CardTitle>
-              <Badge variant="secondary" className="text-lg px-4 py-2 bg-coral/10 text-coral border-coral/20">
-                Если вы читаете {minutesPerDay[0]} минут в день
-              </Badge>
+
             </CardHeader>
             <CardContent className="space-y-8">
               <div className="space-y-4">
